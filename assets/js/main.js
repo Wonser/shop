@@ -372,7 +372,7 @@ jQuery(document).ready(function($) {
           // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
           // Своё изображение иконки метки.
-          iconImageHref: '/assets/img/pin.svg',
+          iconImageHref: 'assets/img/pin.svg',
           // Размеры метки.
           iconImageSize: [48, 48],
           // Смещение левого верхнего угла иконки относительно
@@ -418,11 +418,11 @@ jQuery(document).ready(function($) {
 
   // Карта для выбора адреса
   if($('#deliverymap').length) {
-    var myPlacemark = "";
-    var myMap = "";
+    var myPlacemark2 = "";
+    var myMap2 = "";
     var address = ""; 
     ymaps.ready(function () {
-      myMap = new ymaps.Map('deliverymap', {
+      myMap2 = new ymaps.Map('deliverymap', {
           center: [59.9887660641145,30.43648499999996],
           zoom: 15
       }, {
@@ -430,20 +430,20 @@ jQuery(document).ready(function($) {
       }),
 
       // Слушаем клик на карте.
-      myMap.events.add('click', function (e) {
+      myMap2.events.add('click', function (e) {
       var coords = e.get('coords');
 
       // Если метка уже создана – просто передвигаем ее.
-      if (myPlacemark) {
-          myPlacemark.geometry.setCoordinates(coords);
+      if (myPlacemark2) {
+          myPlacemark2.geometry.setCoordinates(coords);
       }
       // Если нет – создаем.
       else {
-        myPlacemark = createPlacemark(coords);
-        myMap.geoObjects.add(myPlacemark);
+        myPlacemark2 = createPlacemark(coords);
+        myMap2.geoObjects.add(myPlacemark2);
         // Слушаем событие окончания перетаскивания на метке.
-        myPlacemark.events.add('dragend', function () {
-            getAddress(myPlacemark.geometry.getCoordinates());
+        myPlacemark2.events.add('dragend', function () {
+            getAddress(myPlacemark2.geometry.getCoordinates());
         });
       }
       getAddress(coords);
@@ -461,13 +461,13 @@ jQuery(document).ready(function($) {
 
     // Определяем адрес по координатам (обратное геокодирование).
     function getAddress(coords) {
-      myPlacemark.properties.set('iconCaption', 'поиск...');
+      myPlacemark2.properties.set('iconCaption', 'поиск...');
       ymaps.geocode(coords).then(function (res) {
         var firstGeoObject = res.geoObjects.get(0);
 
         address = firstGeoObject.getAddressLine();
 
-        myPlacemark.properties
+        myPlacemark2.properties
           .set({
               // Формируем строку с данными об объекте.
               iconCaption: [
