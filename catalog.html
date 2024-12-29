@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="assets/css/nouislider.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/hystmodal.min.css">
+  <link rel="stylesheet" href="assets/css/glightbox.min.css">
+  <link rel="stylesheet" href="assets/css/main.min.css" media="all">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__main">
+        <a href="#" class="logo header__logo">
+          <img src="assets/img/logo.png" width="65" height="60" alt="Юпитер торговый дом" class="logo__img header__logo-img">
+        </a>
+        <nav>
+          <ul class="additional-menu">
+            <li class="additional-menu__item">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="additional-menu__item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="additional-menu__item menu-item-has-children">
+              <a href="#">Информация</a>
+              <ul class="sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#">О компании</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Новости</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__main-right">
+          <form action="#" role="search" method="get" class="search-form">
+            <label>
+              <span class="screen-reader-text">Искать Товар</span>
+              <input type="search" class="search-form__input" placeholder="Искать Товар" value="" name="s">
+            </label>
+            <input type="submit" class="search-form__button" value="Искать">
+          </form>
+          <div class="phone-wrap">
+            <div class="phone-wrap__head">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+            </div>
+            <div class="phone-wrap__inner">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+              <a href="tel:+78126488867" class="phone">+7 812 648 88 67</a>
+            </div>
+          </div>
+          <a href="#" class="header__cart cart-btn">
+            <span class="header__cart-count count">1</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__menu">
+        <nav class="header__nav">
+          <div class="menu-btn">
+            <span>Меню</span>
+          </div>
+          <ul class="main-menu">
+            <li class="main-menu__item main-menu__item_catalog"><a href="#">Каталог</a></li>
+            <li class="main-menu__item"><a href="#">Полки</a></li>
+            <li class="main-menu__item"><a href="#">Погонаж</a></li>
+            <li class="main-menu__item"><a href="#">Изоляция для бань и саун</a></li>
+            <li class="main-menu__item"><a href="#">Двери и окна</a></li>
+            <li class="main-menu__item"><a href="#">Освещение</a></li>
+            <li class="main-menu__item"><a href="#">Аксессуары</a></li>
+            <li class="main-menu__item"><a href="#">Мебель</a></li>
+          </ul>
+          <div class="phone-wrap">
+            <div class="phone-wrap__head">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+            </div>
+            <div class="phone-wrap__inner">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+              <a href="tel:+78126488867" class="phone">+7 812 648 88 67</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header-end -->
+
+  <!-- header-mobile-menu -->
+  <div class="mobile-modal">
+    <div class="mobile-modal__wrap">
+      <nav>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Полки</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Погонаж</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Изоляция для бань и саун</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Двери и окна</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Освещение</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Аксессуары</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Мебель</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Акции</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Информация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile-modal__overlay"></div>
+  </div>
+  <!-- header-mobile-menu-end -->
+
+  <main>
+    <!-- catalog -->
+    <section class="catalog">
+      <div class="container">
+
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+          <a href="#" class="bradcrumbs__link ">Главная</a>
+          <span class="bradcrumbs__separator separator">»</span>
+          <span class="breadcrumbs__text">Вагонка для бани</span>
+        </div>
+        <!-- breadcrumbs-end -->
+
+        <h1>Вагонка для бани</h1>
+
+        <div class="catalog-wrap">
+          <div class="catalog-wrap__left">
+            <!-- filter -->
+            <div class="filter">
+              <div class="filter__content">
+                <div class="filter__close filter-btn"></div>
+                <form class="filter__wrap" method="get">
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <a href="#" class="active">Вагонка для бани</a>
+                      <ul class="filter__sublist">
+                        <li class="filter__subitem">
+                          <a href="#">Вагонка осина для бань</a>
+                        </li>
+                        <li class="filter__subitem">
+                          <a href="#">Вагонка ольха для бани</a>
+                        </li>
+                        <li class="filter__subitem">
+                          <a href="#">Вагонка липа для бани</a>
+                        </li>
+                        <li class="filter__subitem">
+                          <a href="#">Термовагонка</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="filter__item">
+                      <a href="#">Полки для бани и сауны</a>
+                      <ul class="filter__sublist">
+                        <li class="filter__subitem">
+                          <a href="#">Полок термоабаш</a>
+                        </li>
+                        <li class="filter__subitem">
+                          <a href="#">Полок термолипа</a>
+                        </li>
+                        <li class="filter__subitem">
+                          <a href="#">Полок из абаши</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="filter__item">
+                      <a href="#">Печи для бани и сауны</a>
+                      <ul class="filter__sublist">
+                        <li class="filter__subitem">
+                          <a href="#">Камни для печи</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="filter__blocks">                 
+                    <div class="filter-block">
+                      <div class="filter-block__title">
+                        <p>Цена</p>
+                      </div>
+                      <div class="filter-block__content">
+                        <div class="price-filter filter-block__inner">
+                          <div class="price-filter__inputs">
+                            <input type="number" class="form-input price-filter__input" id="pricemin" name="pricemin" min="0" max="100000">
+                            <input type="number" class="form-input price-filter__input" id="pricemax" name="pricemax" min="0" max="100000">
+                          </div>
+                          <div id="price-slider" data-min="0" data-max="50000"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-block">
+                      <div class="filter-block__title">
+                        <p>Высота</p>
+                      </div>
+                      <div class="filter-block__content">
+                        <div class="height-filter filter-block__inner">
+                          <div class="height-filter__inputs">
+                            <span>от</span>
+                            <input type="number" class="form-input height-filter__input" id="heightmin" name="heightmin" min="1" max="3">
+                            <span>до</span>
+                            <input type="number" class="form-input height-filter__input" id="heightmax" name="heightmax" min="1" max="3">
+                          </div>
+                          <div id="height-slider" data-min="1" data-max="3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-block">
+                      <div class="filter-block__title">
+                        <p>Сорт</p>
+                      </div>
+                      <div class="filter-block__content">
+                        <div class="letter-filter filter-block__inner">
+                          <div class="letter-filter__list">
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter" value="А">
+                              <span class="checkmark"></span>
+                              <span>А</span>
+                              <span class="count">3</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter" value="Б">
+                              <span class="checkmark"></span>
+                              <span>Б</span>
+                              <span class="count">1</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter" value="В">
+                              <span class="checkmark"></span>
+                              <span>В</span>
+                              <span class="count">24</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter" value="Д">
+                              <span class="checkmark"></span>
+                              <span>Д</span>
+                              <span class="count">12</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-block filter-block_hidden">
+                      <div class="filter-block__title">
+                        <p>Другой фильтр</p>
+                      </div>
+                      <div class="filter-block__content">
+                        <div class="letter-filter filter-block__inner">
+                          <div class="letter-filter__list">
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter" value="А">
+                              <span class="checkmark"></span>
+                              <span>А</span>
+                              <span class="count">3</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter" value="Б">
+                              <span class="checkmark"></span>
+                              <span>Б</span>
+                              <span class="count">1</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter" value="В">
+                              <span class="checkmark"></span>
+                              <span>В</span>
+                              <span class="count">24</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter" value="Д">
+                              <span class="checkmark"></span>
+                              <span>Д</span>
+                              <span class="count">12</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-block filter-block_hidden">
+                      <div class="filter-block__title">
+                        <p>Другой фильтр 2</p>
+                      </div>
+                      <div class="filter-block__content">
+                        <div class="letter-filter filter-block__inner">
+                          <div class="letter-filter__list">
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter1" value="А">
+                              <span class="checkmark"></span>
+                              <span>А</span>
+                              <span class="count">3</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter1" value="Б">
+                              <span class="checkmark"></span>
+                              <span>Б</span>
+                              <span class="count">1</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter1" value="В">
+                              <span class="checkmark"></span>
+                              <span>В</span>
+                              <span class="count">24</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter1" value="Д">
+                              <span class="checkmark"></span>
+                              <span>Д</span>
+                              <span class="count">12</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-block filter-block_hidden">
+                      <div class="filter-block__title">
+                        <p>Другой фильтр 3</p>
+                      </div>
+                      <div class="filter-block__content">
+                        <div class="letter-filter filter-block__inner">
+                          <div class="letter-filter__list">
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter2" value="А">
+                              <span class="checkmark"></span>
+                              <span>А</span>
+                              <span class="count">3</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter2" value="Б">
+                              <span class="checkmark"></span>
+                              <span>Б</span>
+                              <span class="count">1</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter2" value="В">
+                              <span class="checkmark"></span>
+                              <span>В</span>
+                              <span class="count">24</span>
+                            </label>
+                            <label class="letter-filter__item">
+                              <input type="checkbox" name="letter2" value="Д">
+                              <span class="checkmark"></span>
+                              <span>Д</span>
+                              <span class="count">12</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="filter__load-more">Ещё</button>
+                  <div class="filter__btns">
+                    <a href="" class="secondary-btn">Сбросить</a>
+                    <input type="submit" class="main-btn" value="Применить">
+                  </div>
+                </form>
+              </div>
+              <div class="filter__overlay"></div>
+            </div>
+            <!-- filter-end -->
+          </div>
+          <div class="catalog-wrap__right">
+            <div class="filter-btn">Фильтр</div>
+            <div class="catalog-category">
+              <a href="#" class="catalog-category__item">
+                <img src="assets/img/product2.png" width="54" height="54" alt="Осина">
+                <p>Осина (6)</p>
+              </a>
+              <a href="#" class="catalog-category__item">
+                <img src="assets/img/product1.png" width="54" height="54" alt="Ольха">
+                <p>Ольха (3)</p>
+              </a>
+              <a href="#" class="catalog-category__item">
+                <img src="assets/img/product3.png" width="54" height="54" alt="Липа">
+                <p>Липа (5)</p>
+              </a>
+            </div>
+            <div class="sorting">
+              <p>Сортировка</p>
+              <button class="sorting__button sorting__button-active" type="button">по умолчанию</button>
+              <button class="sorting__button" type="button">по возрастанию цены</button>
+              <button class="sorting__button" type="button">по убыванию цены</button>
+            </div>
+            <div class="products">
+              <div class="product product-row">
+                <div class="product__img">
+                  <a href="#"><img src="assets/img/product1.png" width="160" height="160" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)" loading="lazy"></a>
+                  <a href="#" class="product__favorite"></a>
+                </div>
+                <div class="product__content">
+                  <a href="#" class="product__title">
+                    <p class="h6">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</p>
+                  </a>
+                  <p class="product__price">75,84 ₽/шт</p>
+                  <div class="product__btns">
+                    <a href="#" class="secondary-btn">Подробнее</a>
+                    <a href="#" class="product__button" data-hystmodal="#productModal">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product product-row">
+                <div class="product__img">
+                  <a href="#"><img src="assets/img/product2.png" width="160" height="160" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)" loading="lazy"></a>
+                  <a href="#" class="product__favorite"></a>
+                </div>
+                <div class="product__content">
+                  <a href="#" class="product__title">
+                    <p class="h6">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</p>
+                  </a>
+                  <p class="product__price">75,84 ₽/шт</p>
+                  <div class="product__btns">
+                    <a href="#" class="secondary-btn">Подробнее</a>
+                    <a href="#" class="product__button" data-hystmodal="#productModal">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product product-row">
+                <div class="product__img">
+                  <a href="#"><img src="assets/img/product3.png" width="160" height="160" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)" loading="lazy"></a>
+                  <a href="#" class="product__favorite"></a>
+                </div>
+                <div class="product__content">
+                  <a href="#" class="product__title">
+                    <p class="h6">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</p>
+                  </a>
+                  <p class="product__price">75,84 ₽/шт</p>
+                  <div class="product__btns">
+                    <a href="#" class="secondary-btn">Подробнее</a>
+                    <a href="#" class="product__button" data-hystmodal="#productModal">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product product-row">
+                <div class="product__img">
+                  <a href="#"><img src="assets/img/product4.png" width="160" height="160" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)" loading="lazy"></a>
+                  <a href="#" class="product__favorite"></a>
+                </div>
+                <div class="product__content">
+                  <a href="#" class="product__title">
+                    <p class="h6">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</p>
+                  </a>
+                  <p class="product__price">75,84 ₽/шт</p>
+                  <div class="product__btns">
+                    <a href="#" class="secondary-btn">Подробнее</a>
+                    <a href="#" class="product__button" data-hystmodal="#productModal">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product product-row">
+                <div class="product__img">
+                  <a href="#"><img src="assets/img/product1.png" width="160" height="160" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)" loading="lazy"></a>
+                  <a href="#" class="product__favorite"></a>
+                </div>
+                <div class="product__content">
+                  <a href="#" class="product__title">
+                    <p class="h6">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</p>
+                  </a>
+                  <p class="product__price">75,84 ₽/шт</p>
+                  <div class="product__btns">
+                    <a href="#" class="secondary-btn">Подробнее</a>
+                    <a href="#" class="product__button" data-hystmodal="#productModal">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product product-row">
+                <div class="product__img">
+                  <a href="#"><img src="assets/img/product2.png" width="160" height="160" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)" loading="lazy"></a>
+                  <a href="#" class="product__favorite"></a>
+                </div>
+                <div class="product__content">
+                  <a href="#" class="product__title">
+                    <p class="h6">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</p>
+                  </a>
+                  <p class="product__price">75,84 ₽/шт</p>
+                  <div class="product__btns">
+                    <a href="#" class="secondary-btn">Подробнее</a>
+                    <a href="#" class="product__button" data-hystmodal="#productModal">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product product-row">
+                <div class="product__img">
+                  <a href="#"><img src="assets/img/product3.png" width="160" height="160" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)" loading="lazy"></a>
+                  <a href="#" class="product__favorite"></a>
+                </div>
+                <div class="product__content">
+                  <a href="#" class="product__title">
+                    <p class="h6">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</p>
+                  </a>
+                  <p class="product__price">75,84 ₽/шт</p>
+                  <div class="product__btns">
+                    <a href="#" class="secondary-btn">Подробнее</a>
+                    <a href="#" class="product__button" data-hystmodal="#productModal">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product product-row">
+                <div class="product__img">
+                  <a href="#"><img src="assets/img/product4.png" width="160" height="160" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)" loading="lazy"></a>
+                  <a href="#" class="product__favorite"></a>
+                </div>
+                <div class="product__content">
+                  <a href="#" class="product__title">
+                    <p class="h6">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</p>
+                  </a>
+                  <p class="product__price">75,84 ₽/шт</p>
+                  <div class="product__btns">
+                    <a href="#" class="secondary-btn">Подробнее</a>
+                    <a href="#" class="product__button" data-hystmodal="#productModal">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="load-more" type="button">Показать ещё +19</button>
+            <div class="pagination">
+              <a href="#" class="pagination__button pagination__button-prev">Назад</a>
+              <a href="#" class="pagination__button pagination__button-current">1</a>
+              <a href="#" class="pagination__button">2</a>
+              <a href="#" class="pagination__button">3</a>
+              <a href="#" class="pagination__button">4</a>
+              <a href="#" class="pagination__button">5</a>
+              <a href="#" class="pagination__button">6</a>
+              <a href="#" class="pagination__button pagination__button-next">Дальше</a>
+            </div>
+
+            <!-- Сделал чтобы показать мобилку, если не нужно удаляй -->
+            <div class="pagination pagination-mobile">
+              <a href="#" class="pagination__button pagination__button-current">1</a>
+              <a href="#" class="pagination__button">2</a>
+              <a href="#" class="pagination__button">...</a>
+              <a href="#" class="pagination__button">6</a>
+            </div>
+
+            <div class="default">
+              <h2>Зачем нужна изоляция для бань?</h2>
+              <p>
+                Хорошая изоляция помогает удерживать тепло в бане, что особенно важно во время холодного времени года. Это позволяет сократить время разогрева и уменьшить потребление энергии.
+              </p>
+              <ul>
+                <li>
+                  <strong>Защита от влаги:</strong>
+                  Бани подвержены высокой влажности, что может привести к образованию плесени и гнили. Изоляция защищает стены и потолок от воздействия влаги, продлевая срок службы конструкции.
+                </li>
+                <li>
+                  <strong>Комфорт:</strong>
+                  Правильная изоляция создает комфортные условия для отдыха, позволяя избежать резких перепадов температуры и создавая уютную атмосферу.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- catalog-end -->
+  </main>
+
+  <!-- modal-add-to-cart -->
+  <div class="hystmodal" id="productModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window product-modal" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Закрыть</button>
+            <div class="main-product">
+              <div class="main-product__gallery">
+                <div class="main-product__inner">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper swiper-thumb">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/product1.png" width="64" height="64" alt="Фото" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/product2.png" width="64" height="64" alt="Фото" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/product3.png" width="64" height="64" alt="Фото" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/product1.png" width="64" height="64" alt="Фото" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper swiper-gallery">
+                  <div class="swiper-wrapper">
+                    <a href="assets/img/product1.png" class="swiper-slide glightbox" data-gallery="gallery">
+                      <img src="assets/img/product1.png" width="403" height="403" alt="Фото" loading="lazy">
+                    </a>
+                    <a href="assets/img/product2.png" class="swiper-slide glightbox" data-gallery="gallery">
+                      <img src="assets/img/product2.png" width="403" height="403" alt="Фото" loading="lazy">
+                    </a>
+                    <a href="assets/img/product3.png" class="swiper-slide glightbox" data-gallery="gallery">
+                      <img src="assets/img/product3.png" width="403" height="403" alt="Фото" loading="lazy">
+                    </a>
+                    <a href="assets/img/product4.png" class="swiper-slide glightbox" data-gallery="gallery">
+                      <img src="assets/img/product1.png" width="403" height="403" alt="Фото" loading="lazy">
+                    </a>
+                  </div>
+                </div>
+                <a href="#" class="main-product__favorite"></a>
+              </div>
+              <div class="main-product__content">
+                <p class="main-product__title">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</p>
+                <span class="main-product__status">В наличии</span>
+                <form action="#" class="main-product__form" method="get">
+                  <div class="main-product__form-inner">
+                    <div class="select">
+                      <select name="width" id="widthProduct">
+                        <option value="Длина вагонки, м: 1.2" selected>1.2</option>
+                        <option value="Длина вагонки, м: 1.4">1.4</option>
+                        <option value="Длина вагонки, м: 1.6">1.6</option>
+                      </select>
+                      <div class="select__head">
+                        <p>Длина вагонки, м: <span class="select__value">1.2</span></p>
+                      </div>
+                      <div class="select__dropdown">
+                        <div class="select__item active">1.2</div>
+                        <div class="select__item">1.4</div>
+                        <div class="select__item">1.6</div>
+                      </div>
+                    </div>
+                    <div class="count">
+                      <p>Кол-во досок, шт</p>
+                      <div class="count__quantity">
+                        <div class="minus"></div>
+                        <input type="number" class="count__input" value="1" min="1" max="99">
+                        <div class="plus"></div>
+                      </div>
+                    </div>
+                    <p class="main-product__price">75,84 ₽/шт</p>
+                  </div>
+                  <input type="submit" class="main-btn main-product__button" value="В корзину">
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- modal-add-to-cart-end -->
+
+  <!-- modal-form -->
+  <div class="hystmodal" id="formModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window form-modal" role="dialog" aria-modal="true">
+            <button data-hystclose class="form-modal__close hystmodal__close">Закрыть</button>
+            <form action="#" method="get" class="form-modal__form">
+              <h2>Связаться с нами</h2>
+              <label class="form-modal__label label-form">
+                <span class="form-modal__text">Имя <span class="form-modal__text-required">*</span></span>
+                <input type="text" class="form-modal__input form-input" name="your-name" placeholder="ФИО" required>
+              </label>
+              <label class="form-modal__label label-form">
+                <span class="form-modal__text">Телефон <span class="form-modal__text-required">*</span></span>
+                <input type="text" class="form-modal__input form-input" id="phone-input2" name="email" placeholder="+7(333)222-11-22" required>
+              </label>
+              <label class="form-modal__label label-form">
+                <span class="form-modal__text">E-mail <span class="form-modal__text-required">*</span></span>
+                <input type="email" class="form-modal__input form-input" name="email" placeholder="ivan@mail.ru" required>
+              </label>
+              <label class="form-modal__accept accept">
+                <input type="checkbox" name="accept" class="accept__input">
+                <span class="checkmark accept__checkmark"></span>
+                <span class="accept__text">Я соглашаюсь на обработку <a href="#">персональных данных</a> и <a href="#">политику конфиденциальности</a></span>
+              </label>
+              <input type="submit" class="form-modal__btn main-btn btn-submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+  </div>
+  <!-- modal-form-end -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-wrap__left">
+          <a href="#" class="footer__logo logo">
+            <img src="assets/img/logo.png" width="130" height="120" alt="Юпитер торговый дом" class="footer__logo-img logo__img">
+          </a>
+          <span class="footer-wrap__left-text">Все права защищены 2024</span>
+          <a href="#" class="footer-wrap__left-link">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-wrap__right">
+          <nav class="footer-nav">
+            <div class="footer-nav__elem">
+              <p class="h5 footer-nav__title">Компания</p>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">О компании</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Контакты</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Новости</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav__elem">
+              <p class="h5 footer-nav__title">Клиентам</p>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Корзина</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Доставка и оплата</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Акции</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav__elem">
+              <p class="h5 footer-nav__title">Контакты</p>
+              <a href="tel:+79219153602" class="footer-nav__link">+7 921 915 36 02</a>
+              <a href="tel:+78126488867" class="footer-nav__link">+7 812 648 88 67</a>
+              <a href="https://yandex.ru/maps/2/saint-petersburg/house/volgo_donskoy_prospekt_4zh/Z0kYcgRmTU0CQFtjfXV5eXtlYg==/?ll=30.436485%2C59.988766&z=17.63" class="footer-nav__link footer-nav__link-address" target="blank">Санкт-Петербург,<br> Волго-Донской пр. д.4. лит. Ж</a>
+              <a href="mailto:9153602@mail.ru" class="footer-nav__link">9153602@mail.ru</a>
+              <a href="#" class="main-btn footer-nav__btn" data-hystmodal="#formModal">Связаться с нами</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-end -->
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/nouislider.min.js"></script>
+  <script src="assets/js/wNumb.min.js"></script>
+  <script src="assets/js/hystmodal.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/imask.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.min.js"></script>
+
+</body>
+</html>

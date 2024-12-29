@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <title>Пост</title>
+  <link rel="stylesheet" href="assets/css/nouislider.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/hystmodal.min.css">
+  <link rel="stylesheet" href="assets/css/glightbox.min.css">
+  <link rel="stylesheet" href="assets/css/main.min.css" media="all">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__main">
+        <a href="#" class="logo header__logo">
+          <img src="assets/img/logo.png" width="65" height="60" alt="Юпитер торговый дом" class="logo__img header__logo-img">
+        </a>
+        <nav>
+          <ul class="additional-menu">
+            <li class="additional-menu__item">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="additional-menu__item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="additional-menu__item menu-item-has-children">
+              <a href="#">Информация</a>
+              <ul class="sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#">О компании</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Новости</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__main-right">
+          <form action="#" role="search" method="get" class="search-form">
+            <label>
+              <span class="screen-reader-text">Искать Товар</span>
+              <input type="search" class="search-form__input" placeholder="Искать Товар" value="" name="s">
+            </label>
+            <input type="submit" class="search-form__button" value="Искать">
+          </form>
+          <div class="phone-wrap">
+            <div class="phone-wrap__head">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+            </div>
+            <div class="phone-wrap__inner">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+              <a href="tel:+78126488867" class="phone">+7 812 648 88 67</a>
+            </div>
+          </div>
+          <a href="#" class="header__cart cart-btn">
+            <span class="header__cart-count count">1</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__menu">
+        <nav class="header__nav">
+          <div class="menu-btn">
+            <span>Меню</span>
+          </div>
+          <ul class="main-menu">
+            <li class="main-menu__item main-menu__item_catalog"><a href="#">Каталог</a></li>
+            <li class="main-menu__item"><a href="#">Полки</a></li>
+            <li class="main-menu__item"><a href="#">Погонаж</a></li>
+            <li class="main-menu__item"><a href="#">Изоляция для бань и саун</a></li>
+            <li class="main-menu__item"><a href="#">Двери и окна</a></li>
+            <li class="main-menu__item"><a href="#">Освещение</a></li>
+            <li class="main-menu__item"><a href="#">Аксессуары</a></li>
+            <li class="main-menu__item"><a href="#">Мебель</a></li>
+          </ul>
+          <div class="phone-wrap">
+            <div class="phone-wrap__head">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+            </div>
+            <div class="phone-wrap__inner">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+              <a href="tel:+78126488867" class="phone">+7 812 648 88 67</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header-end -->
+
+  <!-- header-mobile-menu -->
+  <div class="mobile-modal">
+    <div class="mobile-modal__wrap">
+      <nav>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Полки</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Погонаж</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Изоляция для бань и саун</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Двери и окна</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Освещение</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Аксессуары</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Мебель</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Акции</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Информация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile-modal__overlay"></div>
+  </div>
+  <!-- header-mobile-menu-end -->
+
+  <main>
+    <!-- default -->
+    <section class="default">
+      <div class="container">
+
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+          <a href="#" class="bradcrumbs__link ">Главная</a>
+          <span class="bradcrumbs__separator separator">»</span>
+          <a href="#" class="bradcrumbs__link ">Новости и статьи</a>
+          <span class="bradcrumbs__separator separator">»</span>
+          <span class="breadcrumbs__text">Изоляция для бань: Зачем она нужна и как правильно выбрать</span>
+        </div>
+        <!-- breadcrumbs-end -->
+        
+        <div class="default-wrap">
+          <h1>Изоляция для бань: Зачем она нужна и как правильно выбрать</h1>
+          <p>
+            Бани — это не только место для отдыха и релаксации, но и пространство, где важна правильная теплоизоляция. Изоляция помогает поддерживать комфортную температуру внутри помещения, защищает от потерь тепла и предотвращает образование конденсата. В этой статье мы рассмотрим, зачем нужна изоляция для бань, какие материалы лучше использовать и как правильно их установить.
+          </p>
+          <img src="assets/img/post.jpg" width="800" height="420" alt="Фото бани">
+          <h2>Зачем нужна изоляция для бань?</h2>
+          <p>
+            Хорошая изоляция помогает удерживать тепло в бане, что особенно важно во время холодного времени года. Это позволяет сократить время разогрева и уменьшить потребление энергии.
+          </p>
+          <ul>
+            <li>
+              <strong>Защита от влаги:</strong>
+              Бани подвержены высокой влажности, что может привести к образованию плесени и гнили. Изоляция защищает стены и потолок от воздействия влаги, продлевая срок службы конструкции.
+            </li>
+            <li>
+              <strong>Комфорт:</strong>
+              Правильная изоляция создает комфортные условия для отдыха, позволяя избежать резких перепадов температуры и создавая уютную атмосферу.
+            </li>
+          </ul>
+          <h3>Какие материалы использовать для изоляции?</h3>
+          <div class="table-block">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Материал</th>
+                  <th>Преимущества</th>
+                  <th>Недостатки</th>
+                </tr>
+                <tr>
+                  <td>Минеральная вата</td>
+                  <td data-before="Преимущества">Один из самых распространенных</td>
+                  <td data-before="Недостатки">Высокая стоимость</td>
+                </tr>
+                <tr>
+                  <td>Пенопласт</td>
+                  <td data-before="Преимущества">Легкий и недорогой материал</td>
+                  <td data-before="Недостатки">Редко бывает в наличии</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <figure class="wp-block-pullquote">
+            <blockquote>
+              <p>Перед началом установки изоляции необходимо подготовить поверхность.<br> Убедитесь, что стены и потолок чистые и сухие.</p>
+              <cite>Интересный факт</cite>
+            </blockquote>
+          </figure>
+          <h2>Как правильно установить изоляцию?</h2>
+            <p>
+              Перед началом установки изоляции необходимо подготовить поверхность. Убедитесь, что стены и потолок чистые и сухие.
+            </p>
+            <ol>
+              <li>
+                Установка пароизоляции: Если вы используете пароизоляционные пленки, установите их на внутренней стороне стен и потолка, крепя с помощью строительного скотча.
+              </li>
+              <li>
+                Монтаж изоляционных материалов: Уложите выбранный изоляционный материал между балками или на стены. Убедитесь, что он плотно прилегает и не оставляет щелей.
+              </li>
+              <li>
+                Завершение работ: Закройте изоляцию отделочными материалами, такими как вагонка или гипсокартон, чтобы защитить ее от механических повреждений и влаги.
+              </li>
+            </ol>
+            <h3>Полезные советы по изоляции бань</h3>
+            <p>
+              При выборе изоляционных материалов обращайте <mark style="background-color:#FFFEAA">внимание на их сертификаты и характеристики.</mark> Это гарантирует, что вы получите качественный продукт.
+            </p>
+            <details class="wp-block-details">
+              <summary>Материалы для изоляции</summary>
+              <ul class="wp-block-list">
+                <li>Минеральная вата</li>
+                <li>Пароизоляционные пленки</li>
+                <li>Эковата</li>
+              </ul>
+            </details>
+            <blockquote class="wp-block-quote">
+              <p>Пароизоляционные пленки используются для защиты изоляционных материалов от влаги. Они устанавливаются на внутренней стороне стен и потолка, предотвращая попадание пара в изоляцию.</p>
+              <cite>—&nbsp;Эксперт в области безопасности</cite>
+            </blockquote>
+            <h2>Заключение</h2>
+            <p>
+              Правильная изоляция для <s>бани</s> — это залог комфортного и безопасного отдыха. Выбор подходящих материалов и их грамотная установка помогут вам создать идеальные условия для парения и расслабления. <a href="#">Не забывайте о регулярном уходе за изоляцией</a>, чтобы продлить ее срок службы и сохранить тепло в вашем уютном уголке.
+            </p>
+        </div>
+
+        <div class="default-info">
+          <h6>Контактная информация</h6>
+          <p>Автор: Иван Иванов</p>
+          <p>Email: <a href="mailto:ivan@mail.ru">ivan@mail.ru</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- default-end -->
+  </main>
+
+  <!-- modal-form -->
+  <div class="hystmodal" id="formModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window form-modal" role="dialog" aria-modal="true">
+            <button data-hystclose class="form-modal__close hystmodal__close">Закрыть</button>
+            <form action="#" method="get" class="form-modal__form">
+              <h2>Связаться с нами</h2>
+              <label class="form-modal__label label-form">
+                <span class="form-modal__text">Имя <span class="form-modal__text-required">*</span></span>
+                <input type="text" class="form-modal__input form-input" name="your-name" placeholder="ФИО" required>
+              </label>
+              <label class="form-modal__label label-form">
+                <span class="form-modal__text">Телефон <span class="form-modal__text-required">*</span></span>
+                <input type="text" class="form-modal__input form-input" id="phone-input2" name="email" placeholder="+7(333)222-11-22" required>
+              </label>
+              <label class="form-modal__label label-form">
+                <span class="form-modal__text">E-mail <span class="form-modal__text-required">*</span></span>
+                <input type="email" class="form-modal__input form-input" name="email" placeholder="ivan@mail.ru" required>
+              </label>
+              <label class="form-modal__accept accept">
+                <input type="checkbox" name="accept" class="accept__input">
+                <span class="checkmark accept__checkmark"></span>
+                <span class="accept__text">Я соглашаюсь на обработку <a href="#">персональных данных</a> и <a href="#">политику конфиденциальности</a></span>
+              </label>
+              <input type="submit" class="form-modal__btn main-btn btn-submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+  </div>
+  <!-- modal-form-end -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-wrap__left">
+          <a href="#" class="footer__logo logo">
+            <img src="assets/img/logo.png" width="130" height="120" alt="Юпитер торговый дом" class="footer__logo-img logo__img">
+          </a>
+          <span class="footer-wrap__left-text">Все права защищены 2024</span>
+          <a href="#" class="footer-wrap__left-link">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-wrap__right">
+          <nav class="footer-nav">
+            <div class="footer-nav__elem">
+              <p class="h5 footer-nav__title">Компания</p>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">О компании</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Контакты</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Новости</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav__elem">
+              <p class="h5 footer-nav__title">Клиентам</p>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Корзина</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Доставка и оплата</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Акции</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav__elem">
+              <p class="h5 footer-nav__title">Контакты</p>
+              <a href="tel:+79219153602" class="footer-nav__link">+7 921 915 36 02</a>
+              <a href="tel:+78126488867" class="footer-nav__link">+7 812 648 88 67</a>
+              <a href="https://yandex.ru/maps/2/saint-petersburg/house/volgo_donskoy_prospekt_4zh/Z0kYcgRmTU0CQFtjfXV5eXtlYg==/?ll=30.436485%2C59.988766&z=17.63" class="footer-nav__link footer-nav__link-address" target="blank">Санкт-Петербург,<br> Волго-Донской пр. д.4. лит. Ж</a>
+              <a href="mailto:9153602@mail.ru" class="footer-nav__link">9153602@mail.ru</a>
+              <a href="#" class="main-btn footer-nav__btn" data-hystmodal="#formModal">Связаться с нами</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-end -->
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/nouislider.min.js"></script>
+  <script src="assets/js/wNumb.min.js"></script>
+  <script src="assets/js/hystmodal.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/imask.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.min.js"></script>
+
+</body>
+</html>

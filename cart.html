@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="assets/css/nouislider.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/hystmodal.min.css">
+  <link rel="stylesheet" href="assets/css/glightbox.min.css">
+  <link rel="stylesheet" href="assets/css/main.min.css" media="all">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__main">
+        <a href="#" class="logo header__logo">
+          <img src="assets/img/logo.png" width="65" height="60" alt="Юпитер торговый дом" class="logo__img header__logo-img">
+        </a>
+        <nav>
+          <ul class="additional-menu">
+            <li class="additional-menu__item">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="additional-menu__item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="additional-menu__item menu-item-has-children">
+              <a href="#">Информация</a>
+              <ul class="sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#">О компании</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#">Новости</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__main-right">
+          <form action="#" role="search" method="get" class="search-form">
+            <label>
+              <span class="screen-reader-text">Искать Товар</span>
+              <input type="search" class="search-form__input" placeholder="Искать Товар" value="" name="s">
+            </label>
+            <input type="submit" class="search-form__button" value="Искать">
+          </form>
+          <div class="phone-wrap">
+            <div class="phone-wrap__head">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+            </div>
+            <div class="phone-wrap__inner">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+              <a href="tel:+78126488867" class="phone">+7 812 648 88 67</a>
+            </div>
+          </div>
+          <a href="#" class="header__cart cart-btn">
+            <span class="header__cart-count count">1</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__menu">
+        <nav class="header__nav">
+          <div class="menu-btn">
+            <span>Меню</span>
+          </div>
+          <ul class="main-menu">
+            <li class="main-menu__item main-menu__item_catalog"><a href="#">Каталог</a></li>
+            <li class="main-menu__item"><a href="#">Полки</a></li>
+            <li class="main-menu__item"><a href="#">Погонаж</a></li>
+            <li class="main-menu__item"><a href="#">Изоляция для бань и саун</a></li>
+            <li class="main-menu__item"><a href="#">Двери и окна</a></li>
+            <li class="main-menu__item"><a href="#">Освещение</a></li>
+            <li class="main-menu__item"><a href="#">Аксессуары</a></li>
+            <li class="main-menu__item"><a href="#">Мебель</a></li>
+          </ul>
+          <div class="phone-wrap">
+            <div class="phone-wrap__head">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+            </div>
+            <div class="phone-wrap__inner">
+              <a href="tel:+79219153602" class="phone">+7 921 915 36 02</a>
+              <a href="tel:+78126488867" class="phone">+7 812 648 88 67</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header-end -->
+
+  <!-- header-mobile-menu -->
+  <div class="mobile-modal">
+    <div class="mobile-modal__wrap">
+      <nav>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Полки</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Погонаж</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Изоляция для бань и саун</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Двери и окна</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Освещение</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Аксессуары</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Мебель</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Акции</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">Информация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile-modal__overlay"></div>
+  </div>
+  <!-- header-mobile-menu-end -->
+
+  <main>
+    <!-- cart -->
+    <section class="cart">
+      <div class="container">
+
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+          <a href="#" class="bradcrumbs__link ">Главная</a>
+          <span class="bradcrumbs__separator separator">»</span>
+          <span class="breadcrumbs__text">Корзина</span>
+        </div>
+        <!-- breadcrumbs-end -->
+
+        <h1 class="cart__title">Корзина</h1>
+
+        <div class="cart__item border-elem">
+          <div class="cart-table">
+            <div class="cart-table__head">
+              <div class="cart-table__heading">Фото</div>
+              <div class="cart-table__heading">Товары</div>
+              <div class="cart-table__heading">Цена за шт.</div>
+              <div class="cart-table__heading">Количество</div>
+              <div class="cart-table__heading">Цена</div>
+              <div class="cart-table__heading"></div>
+            </div>
+            <div class="cart-table__list">
+              <div class="cart-table__item">
+                <a href="#" class="cart-table__img">
+                  <img src="assets/img/product1.png" width="80" height="80" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)">
+                </a>
+                <div class="cart-table__name">
+                  <a href="#" class="cart-table__title">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</a>
+                  <div class="cart-table__attributes">
+                    <p class="cart-table__attribute">Длина вагонки, м: 1,2</p>
+                    <p class="cart-table__attribute">Сорт: А</p>
+                  </div>
+                </div>
+                <div class="cart-table__price cart-table__price-desktop">
+                  <p>7 500 ₽</p>
+                </div>
+                <div class="cart-table__quantity">
+                  <div class="quantity">
+                    <div class="minus"></div>
+                    <input type="number" class="quantity__input" value="1" min="1" max="99">
+                    <div class="plus"></div>
+                  </div>
+                </div>
+                <div class="cart-table__price">
+                  <p>75 000 ₽</p>
+                  <span>7 500 ₽ / шт</span>
+                </div>
+                <div class="cart-table__delete">
+                  <a href="#" class="cart-table__remove"></a>
+                </div>
+              </div>
+              <div class="cart-table__item">
+                <a href="#" class="cart-table__img">
+                  <img src="assets/img/product2.png" width="80" height="80" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)">
+                </a>
+                <div class="cart-table__name">
+                  <a href="#" class="cart-table__title">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</a>
+                  <div class="cart-table__attributes">
+                    <p class="cart-table__attribute">Длина вагонки, м: 1,2</p>
+                    <p class="cart-table__attribute">Сорт: А</p>
+                  </div>
+                </div>
+                <div class="cart-table__price cart-table__price-desktop">
+                  <p>7 500 ₽</p>
+                </div>
+                <div class="cart-table__quantity">
+                  <div class="quantity">
+                    <div class="minus"></div>
+                    <input type="number" class="quantity__input" value="1" min="1" max="99">
+                    <div class="plus"></div>
+                  </div>
+                </div>
+                <div class="cart-table__price">
+                  <p>75 000 ₽</p>
+                  <span>7 500 ₽ / шт</span>
+                </div>
+                <div class="cart-table__delete">
+                  <a href="#" class="cart-table__remove"></a>
+                </div>
+              </div>
+              <div class="cart-table__item">
+                <a href="#" class="cart-table__img">
+                  <img src="assets/img/product3.png" width="80" height="80" alt="Фото Вагонка Осина СофтЛайн Кат АВ 16*96(88)">
+                </a>
+                <div class="cart-table__name">
+                  <a href="#" class="cart-table__title">Вагонка Осина СофтЛайн Кат АВ 16*96(88)</a>
+                  <div class="cart-table__attributes">
+                    <p class="cart-table__attribute">Длина вагонки, м: 1,2</p>
+                    <p class="cart-table__attribute">Сорт: А</p>
+                  </div>
+                </div>
+                <div class="cart-table__price cart-table__price-desktop">
+                  <p>7 500 ₽</p>
+                </div>
+                <div class="cart-table__quantity">
+                  <div class="quantity">
+                    <div class="minus"></div>
+                    <input type="number" class="quantity__input" value="1" min="1" max="99">
+                    <div class="plus"></div>
+                  </div>
+                </div>
+                <div class="cart-table__price">
+                  <p>75 000 ₽</p>
+                  <span>7 500 ₽ / шт</span>
+                </div>
+                <div class="cart-table__delete">
+                  <a href="#" class="cart-table__remove"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="cart__heading cart__heading-total">Итого: 225 000 ₽</h3>
+        </div>
+        <form action="#" method="get">
+          <div class="cart__item border-elem">
+            <h3 class="cart__heading border-elem__title">Оформление</h3>
+            <div class="form-inner">
+              <input type="text" class="form-input" name="your-name" placeholder="ФИО" required>
+              <input type="text" class="form-input" id="phone-input" name="phone" placeholder="Телефон" required>
+              <input type="email" class="form-input" name="email" placeholder="E-mail" required>
+            </div>
+          </div>
+          <div class="cart__item border-elem">
+            <h3 class="cart__heading border-elem__title">Способы доставки</h3>
+            <div class="cart__payments">
+              <label class="cart__payment active">
+                <input type="radio" name="delivery" checked>
+                <span class="checkmark"></span>
+                <span>Самовывоз</span>
+                <span class="cart__payment-price">0 ₽</span>
+              </label>
+              <label class="cart__payment cart__payment_delivery">
+                <input type="radio" name="delivery">
+                <span class="checkmark"></span>
+                <span>Доставка</span>
+                <span class="cart__payment-price">от 500 ₽</span>
+              </label>
+            </div>
+            <div class="cart-delivery">
+              <div class="cart-delivery__wrap">
+                <p class="cart-delivery__title">Адрес</p>
+                <input name="cart-delivery" id="cart-delivery" class="form-input" placeholder="г. Санкт-Петербург, ул. Симушкина, д. 119">
+                <a href="#" class="cart-delivery__link" data-hystmodal="#mapModal">Выбрать на карте</a>
+              </div>
+            </div>
+          </div>
+          <div class="cart__item border-elem">
+            <div class="cart__heading-wrap">
+              <h3 class="cart__heading border-elem__title">Оплата</h3>
+              <div class="cart__sum">
+                <p>Товары: 75 000 ₽</p>
+                <p>Доставка: 560 ₽</p>
+              </div>
+            </div>
+            <div class="cart__payments">
+              <label class="cart__payment active">
+                <input type="radio" name="payment" checked>
+                <span class="checkmark"></span>
+                <span>При получении</span>
+              </label>
+              <label class="cart__payment cart__payment_disabled">
+                <input type="radio" name="payment" disabled>
+                <span class="checkmark"></span>
+                <span>Картой онлайн</span>
+              </label>
+            </div>
+            <div class="cart__subtotal">
+              <label class="cart__accept accept">
+                <input type="checkbox" name="accept" class="accept__input">
+                <span class="checkmark accept__checkmark"></span>
+                <span class="accept__text">Я соглашаюсь на обработку <a href="#">персональных данных</a> и <a href="#">политику конфиденциальности</a></span>
+              </label>
+              <p>75 500 ₽</p>
+              <input type="submit" class="main-btn btn-submit" value="Заказать">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- cart-end -->
+  </main>
+
+   <!-- modal-map -->
+   <div class="hystmodal" id="mapModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window map-modal" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Закрыть</button>
+            <div id="deliverymap" class="map-modal__map"></div>
+            <button type="button" class="main-btn" data-hystclose>Выбрать</button>
+        </div>
+    </div>
+  </div>
+  <!-- modal-map-end -->
+
+  <!-- modal-form -->
+  <div class="hystmodal" id="formModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window form-modal" role="dialog" aria-modal="true">
+            <button data-hystclose class="form-modal__close hystmodal__close">Закрыть</button>
+            <form action="#" method="get" class="form-modal__form">
+              <h2>Связаться с нами</h2>
+              <label class="form-modal__label label-form">
+                <span class="form-modal__text">Имя <span class="form-modal__text-required">*</span></span>
+                <input type="text" class="form-modal__input form-input" name="your-name" placeholder="ФИО" required>
+              </label>
+              <label class="form-modal__label label-form">
+                <span class="form-modal__text">Телефон <span class="form-modal__text-required">*</span></span>
+                <input type="text" class="form-modal__input form-input" id="phone-input2" name="email" placeholder="+7(333)222-11-22" required>
+              </label>
+              <label class="form-modal__label label-form">
+                <span class="form-modal__text">E-mail <span class="form-modal__text-required">*</span></span>
+                <input type="email" class="form-modal__input form-input" name="email" placeholder="ivan@mail.ru" required>
+              </label>
+              <label class="form-modal__accept accept">
+                <input type="checkbox" name="accept" class="accept__input">
+                <span class="checkmark accept__checkmark"></span>
+                <span class="accept__text">Я соглашаюсь на обработку <a href="#">персональных данных</a> и <a href="#">политику конфиденциальности</a></span>
+              </label>
+              <input type="submit" class="form-modal__btn main-btn btn-submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+  </div>
+  <!-- modal-form-end -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-wrap__left">
+          <a href="#" class="footer__logo logo">
+            <img src="assets/img/logo.png" width="130" height="120" alt="Юпитер торговый дом" class="footer__logo-img logo__img">
+          </a>
+          <span class="footer-wrap__left-text">Все права защищены 2024</span>
+          <a href="#" class="footer-wrap__left-link">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-wrap__right">
+          <nav class="footer-nav">
+            <div class="footer-nav__elem">
+              <p class="h5 footer-nav__title">Компания</p>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">О компании</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Контакты</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Новости</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav__elem">
+              <p class="h5 footer-nav__title">Клиентам</p>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Корзина</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Доставка и оплата</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Акции</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav__elem">
+              <p class="h5 footer-nav__title">Контакты</p>
+              <a href="tel:+79219153602" class="footer-nav__link">+7 921 915 36 02</a>
+              <a href="tel:+78126488867" class="footer-nav__link">+7 812 648 88 67</a>
+              <a href="https://yandex.ru/maps/2/saint-petersburg/house/volgo_donskoy_prospekt_4zh/Z0kYcgRmTU0CQFtjfXV5eXtlYg==/?ll=30.436485%2C59.988766&z=17.63" class="footer-nav__link footer-nav__link-address" target="blank">Санкт-Петербург,<br> Волго-Донской пр. д.4. лит. Ж</a>
+              <a href="mailto:9153602@mail.ru" class="footer-nav__link">9153602@mail.ru</a>
+              <a href="#" class="main-btn footer-nav__btn" data-hystmodal="#formModal">Связаться с нами</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-end -->
+
+  
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f991e8c1-c097-4d2e-9d65-99322318db3d"></script>
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/nouislider.min.js"></script>
+  <script src="assets/js/wNumb.min.js"></script>
+  <script src="assets/js/hystmodal.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/imask.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.min.js"></script>
+
+</body>
+</html>

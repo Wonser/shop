@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      id="font_awesome_style-css"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css?ver=5.8"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="flickity-css-css"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css?ver=5.8"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="flickity-fade-css-css"
+      href="https://unpkg.com/flickity-fade@1/flickity-fade.css?ver=5.8"
+      media="all"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="fixed-progress">
+      <div class="fixed-progress__text">
+        Прогресс верстки &nbsp&nbsp
+        <span class="progress-numbers-js"></span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-bar__fill"></div>
+      </div>
+    </div>
+
+    <header class="section header">
+      <div class="container">
+        <div class="row header__row">
+          <div class="header__col">
+            <div class="logo">
+              <span>Crazy.Development</span>
+            </div>
+          </div>
+          <div class="header__col"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="section-wrap">
+      <section class="section hero">
+        <div class="container">
+          <div class="row">
+            <div class="hero__head">
+              <!-- Заголовок страницы + тэг -->
+              <div class="page-head" data-tag="Вёрстка проекта">
+                <h1 class="page-head__title">Positivity</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Контент страницы -->
+      <section class="section page-content-section">
+        <div class="container">
+          <div class="row">
+            <div class="page-content">
+              <!-- Список страниц -->
+              <div class="page-content__list">
+                <div class="pages">
+                  <h2 class="pages__title">Список страниц</h2>
+                  <ul class="pages__list"></ul>
+                </div>
+              </div>
+
+              <!-- Сайдбар -->
+              <div class="page-content__sidebar sidebar">
+                <!-- Виджет - Информация -->
+                <div class="info-block">
+                  <p>
+                    Для корректного отображения последних изменений не забывайте сбрасывать кэш в
+                    вашем браузере. Ctrl + F5 для Windows. Command+R для Mac.
+                  </p>
+                </div>
+
+                <!-- Виджет - Статус проекта -->
+                <div class="info-card">
+                  <div class="info-card__subtitle">Статус проекта</div>
+                  <div class="info-card__title status-js">В работе</div>
+                </div>
+
+                <!-- Виджет - Прогресс -->
+                <div class="info-card">
+                  <div class="info-card__subtitle">Прогресс</div>
+                  <div class="info-card__title progress-numbers-js"></div>
+                  <div class="info-card__text progress-text-js">
+                    Если не выйти на сцену, так и не узнаешь, полетят ли помидоры.
+                  </div>
+                </div>
+
+                <!-- Виджет - Благодарность -->
+                <div class="thanks-block">
+                  <h3 class="thanks-block__title">Спасибо за заказ</h3>
+                  <div class="thanks-block__text">
+                    <p>Всегда Ваша – команда Crazy Studio!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/footer-wide.png" class="page-content-section__bg" />
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+      id="flickity-js-js"
+    ></script>
+    <script
+      src="https://unpkg.com/flickity-fade@1/flickity-fade.js"
+      id="flickity-fade-js-js"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
