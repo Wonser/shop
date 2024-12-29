@@ -494,8 +494,4 @@ jQuery(document).ready(function($) {
     $('.filter-block_hidden').toggle(400);
     $(this).text(($(".filter__load-more").text() == 'Ещё') ? 'Скрыть' : 'Ещё');
   });
-
-  // Для мобильного меню, правильный отступ
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
 });

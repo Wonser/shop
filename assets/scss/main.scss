@@ -971,7 +971,8 @@ body {
     position: relative;
     z-index: 2;
     overflow: auto;
-    max-height: calc((var(--vh, 1vh) * 100) - 154px);
+    max-height: calc(100vh - 154px);
+    padding-bottom: 60px;
 
     nav {
       display: flex;
