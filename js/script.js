@@ -1,6 +1,6 @@
 jQuery(function ($) {
 
-  const ROOT_URL = 'https://jupiter.wonser.ru';
+  const ROOT_URL = 'https://wonser.github.io/shop';
 
   const pageTitleText = 'Юпитер';
 
